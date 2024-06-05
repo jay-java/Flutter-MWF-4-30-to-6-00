@@ -9,21 +9,38 @@ class MyButtons extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Buttons'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.green,
       ),
       body: Container(
-        child: OutlinedButton(
-          child: Text('outlined button',
-          style: TextStyle(
-              fontSize: 25
-          ),),
-          onPressed: (){
-            print('outlined button');
-          },
-          onLongPress: (){
-            print('outlined button long pressed');
-          },
-        ),
+        height: double.infinity,
+        width: double.infinity,
+        color: Colors.grey,
+        child: Center(
+            child: Container(
+              height: 150,
+                width: 150,
+                color: Colors.purple,
+                child: Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('user data',
+                      style: TextStyle(fontSize: 25,backgroundColor: Colors.blue),
+
+                    ),
+                  ),
+                ))),
+        // child: OutlinedButton(
+        //   child: Text('outlined button',
+        //   style: TextStyle(
+        //       fontSize: 25
+        //   ),),
+        //   onPressed: (){
+        //     print('outlined button');
+        //   },
+        //   onLongPress: (){
+        //     print('outlined button long pressed');
+        //   },
+        // ),
 
         // child: ElevatedButton(
         //   child: Text('Elevated Button',
