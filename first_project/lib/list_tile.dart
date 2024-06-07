@@ -5,6 +5,7 @@ class MyListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var names= ['java','kotlin','C','C++','python','php'];
+    var images = ['dell.png','loafers.jpg','moto.png','shirt.jpg','shoes.png','tshirt.png'];
     return Scaffold(
       appBar: AppBar(
         title: Text('MyListTile'),
@@ -12,7 +13,13 @@ class MyListTile extends StatelessWidget {
       ),
       body: ListView.separated(itemBuilder: (context, index) {
         return ListTile(
-          leading: Text('${index+1}',style: TextStyle(fontSize: 25),),
+          leading: Container(
+            height: 100,
+            width: 100,
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/${images[index]}'),
+            ),
+          ),
           title: Text(names[index],style: TextStyle(fontSize: 25),),
           subtitle: Text(names[index]),
           trailing: Icon(Icons.delete),
