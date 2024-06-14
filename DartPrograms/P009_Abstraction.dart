@@ -46,6 +46,7 @@ void main(List<String> args) {
   s.interest();
   s.HL();
   s.PL();
+  RBI.RepoRate();
   SBI s1 = new SBI();
   s1.interest();
   s1.HL();

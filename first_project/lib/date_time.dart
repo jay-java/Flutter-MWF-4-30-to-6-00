@@ -23,7 +23,6 @@ class MyDateTime extends StatelessWidget {
                   firstDate: DateTime(2020),
                   lastDate: DateTime(2025));
 
-
               print('Date : ${dateTime?.day} / ${dateTime?.month} / ${dateTime?.year} ');
               // DatePickerDialog dateTime = new DatePickerDialog(
               //     initialDate: DateTime.now(),
