@@ -1,5 +1,6 @@
 import 'package:first_project/row_and_column.dart';
 import 'package:first_project/scroll_view.dart';
+import 'package:first_project/splashScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'GridView.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyForm(),
+      home: const MySplashScreen(),
     );
   }
 }
